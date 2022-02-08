@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+ 
+  <head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title id="title"> Contact US 
+ </title> 
+
+<style>
+
+body{
+	background: grey;
+}
+
+#main
+{	color: Black;
+    position:relative;
+	text-align center;
+    min-height: 40%;
+    background: white;
+	width: 40%;
+	text-align: center; 
+	margin-left: 30%;
+	margin-right: 30%;
+}
+
+			.header{
+			background-color: white;
+			display: inline;
+			float: left;
+			margin: 2%;
+			hight: 10%;
+			}
+			.header{
+			background-color: white;
+			display: inline;
+			float: left;
+			margin: 2%;
+			hight: 10%;
+			}
+			.header nav ul li{
+			float: left;
+			display: inline;
+			list-style: none;
+			}
+			.header nav ul li a{
+			display: inline-blocks;
+			background-color: black;
+			color:orange;
+			padding: 5px 15px;
+			height:20px;
+			margin 2%;
+			}
+
+h1 {
+	text-align: center;
+	color: Black;
+}
+#description{
+	text-align: center;
+}
+
+	#survey-form{
+	background: white;
+	align-iterms: center;
+	text-align: center;
+	display: inline-blocks;
+	width: 80%;
+    padding: 6% 10% 4% 10%;
+	top: 8%;
+	}
+	
+	#survey-form::before 
+	{
+	width: 100%;
+	content:"";
+    position: absolute;
+	text-align: center;
+    top:-9px;
+    right: -2px;
+    bottom: -9px;
+    left: -2px;
+    background: linear-gradient(180deg,blue,orange);
+    z-index: -20;
+    transform: skew(.5deg,1deg);
+    border-radius: 10px;
+	} 
+	input {
+	border-radius: 5px;
+	width:60%
+	}
+	#fm{
+	float: left;
+	margin-left: 0px;
+	} 
+	#check{
+	float: left;
+	margin-left: 0px;
+	}
+	textarea{
+	width:80%;
+	}
+	
+</style>
+
+  </head>
+  <body>
+  <div id="wrapper">
+		<section class="header">
+		<img src= "LOGO.png" alt="Logo" width="10%" hight="10%"> 
+			<nav>
+			<ul>
+				<li class="active" ><a href="MyProfile.html" title="Home">Home</a></li>
+				<li><a href="About.html" title="about page">About</a></li>
+				<li><a href="ContactPage.html" title="contact page">Contact Page</a></li>
+			</ul> </nav> </section>
+  <h1 id="title"> CONTACT US </h1>
+  <div id="main">
+  <br>
+<p id="description"> Fill in the Form to be contacted </p>  
+
+<legend> Contact Inforamtion</legend>
+	<form id="survey-form" tabindex="0" method="post">
+ 
+						<label id= "name-label"> Name: </label>
+						<br><input type="text" name="Username" size="30" maxlength="40" required= "required" placeholder="Your Name here"> 
+						</input>
+	<br><br>
+						<label id="email-label"> Email: </label>
+						<br><input type="email" name="email" size="30" maxlength="40" required= "required" placeholder="Email Here"> 
+						</input>
+ 
+ <br><br>
+						
+				<p>What kind of music do you listen to?</p>
+					<select name="music">
+						<option value="pop">Pop</option>
+						<option value="hip-hop">Hip Hop</option>
+						<option value="jazz">Jazz</option>
+						<option value="rnb">RNB</option>
+						<option value="amapiano">Amapiano</option>
+						<option value="amabozida">Amabozida</option>
+					</select>
+			  <br>
+				  <div id="radbutton">
+				  <p> Select the ethnic group bellow</p>
+				   <input id="fm"type="radio" name="race" value="African" checked="checked" />African </br>
+					<input id="fm" type="radio" name="race" value="White" />White </br>
+					<input id="fm" type="radio" name="race" value="coloured" />Colored </br>
+				  </div>
+					<div id="selectonbox">
+					<p> I have accounts on the following social media platform(s)</p>
+					<input id="check" type="checkbox" name="smedia" value="WhatsApp" checked="checked" /> WhatsApp </br>
+					<input id="check" type="checkbox" name="smedia" value="Instagram" /> Instagram </br>
+					<input id="check" type="checkbox" name="smedia" value="Facebook" /> Facebook </br>
+					</div></br>
+					<div id="textbox">
+					<p>Enter any additional information in the field bellow:</p>
+					<textarea name="comments" placeholder="Enter additional comments..." >Enter additional comments...</textarea>
+  </br></br>			</div>
+			<input type="submit" name="subscribe" value="SEND" > </input> </br>
+	</form> 
+				<footer> 
+					<a href=""> Facebook</a>
+					<a href=""> LinkedIn</a>
+					<a href=""> WhatsApp</a>
+					<p><a> Cell: 076 175 5125</a></p>
+				</footer>	
+</div></div>
+  </body>
+</html>
